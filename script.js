@@ -221,7 +221,7 @@ const letters = {
             </p>
 
             <p>
-                Happy one year.
+                Happy one year anniversary.
             </p>
         `
 
