@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f3eb">
+  <title>One Year of Us | Daniel & Precious</title>
+  <meta name="description" content="A little place on the internet made for Daniel and Precious.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="film-grain"></div>
+
+  <!-- WELCOME SCREEN -->
+  <section id="welcome" class="welcome">
+    <p class="eyebrow">A LITTLE PLACE MADE JUST FOR US</p>
+    <div class="welcome-heart">♡</div>
+    <h1>One Year<br><em>of Us.</em></h1>
+    <p class="welcome-names">DANIEL <span>✳</span> PRECIOUS</p>
+    <p class="welcome-copy">One year of memories, a thousand little reasons, and a story I would choose all over again.</p>
+
+    <form id="entry-form" class="entry-form">
+      <label for="entry-password">A little secret before you enter</label>
+      <input id="entry-password" type="password" placeholder="Our secret word..." autocomplete="off" required>
+      <button class="button button-dark" type="submit">Enter Our Story <span>↗</span></button>
+      <p id="entry-error" class="error-message" aria-live="polite"></p>
+    </form>
+    <p class="tiny-note">MADE WITH LOVE · NOVEMBER 1, 2026</p>
+  </section>
+
+  <!-- MAIN WEBSITE -->
+  <main id="story" hidden>
+    <nav class="nav">
+      <a href="#home" class="brand">D <span>♡</span> P</a>
+      <div class="nav-links">
+        <a href="#memories">Memories</a>
+        <a href="#letters">Letters</a>
+        <a href="#timeline">Our story</a>
+      </div>
+      <button id="music-toggle" class="music-toggle" aria-label="Play or pause background music">♫ <span>Music off</span></button>
+    </nav>
+
+    <section id="home" class="hero section-pad">
+      <p class="eyebrow reveal">01 NOVEMBER 2025 — FOREVER TO GO</p>
+      <h2 class="hero-title reveal">Somehow,<br>it's always been <em>you.</em></h2>
+      <p class="hero-copy reveal">365 days of being us. And if I had to start this story again, I would still hope it led me to you.</p>
+      <a href="#memories" class="button button-dark reveal">Take a walk with me ↓</a>
+
+      <div class="hero-photo reveal">
+        <img src="media/photo-01.jpg" alt="Daniel and Precious together"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="photo-placeholder"><span>♡</span><p>OUR FIRST PHOTO GOES HERE</p><small>Add your photo as media/photo-01.jpg</small></div>
+        <span class="photo-label">MY FAVOURITE KIND OF US</span>
+      </div>
+      <p class="handwritten hero-note">my favourite person. my favourite story.</p>
+    </section>
+
+    <section id="memories" class="memories section-pad">
+      <p class="eyebrow reveal">A COLLECTION OF LITTLE FOREVERS</p>
+      <h2 class="section-title reveal">The moments that<br><em>became our memories.</em></h2>
+      <p class="section-copy reveal">Not every moment was extraordinary. But somehow, the ordinary ones became my favourites because they had you in them.</p>
+
+      <div class="gallery">
+        <article class="memory-card memory-tall reveal">
+          <div class="image-frame">
+            <img src="media/photo-02.jpg" alt="A favourite memory" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="photo-placeholder"><span>01</span><p>ADD A FAVOURITE PHOTO</p></div>
+          </div>
+          <p class="memory-date">A MOMENT I KEEP COMING BACK TO</p>
+          <h3>That smile of yours.</h3>
+          <p>There are pictures you take, and there are pictures that take you right back to how you felt.</p>
+        </article>
+
+        <article class="memory-card memory-offset reveal">
+          <div class="image-frame">
+            <img src="media/photo-03.jpg" alt="Another memory of us" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="photo-placeholder"><span>02</span><p>ADD ANOTHER PHOTO</p></div>
+          </div>
+          <p class="memory-date">ONE OF OUR LITTLE MOMENTS</p>
+          <h3>Just us being us.</h3>
+          <p>The random laughs, the silly conversations, the moments that wouldn't mean as much to anyone else.</p>
+        </article>
+
+        <article class="memory-card reveal">
+          <div class="image-frame">
+            <img src="media/photo-04.jpg" alt="A treasured memory" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="photo-placeholder"><span>03</span><p>ADD A MEMORY HERE</p></div>
+          </div>
+          <p class="memory-date">ONE FOR THE MEMORY BOOK</p>
+          <h3>Little things, big feelings.</h3>
+          <p>Some memories don't need a special occasion. They just need to be ours.</p>
+        </article>
+      </div>
+      <p class="gallery-footnote">THREE PHOTOS FOR NOW. A WHOLE LIFETIME OF MEMORIES TO COME.</p>
+    </section>
+
+    <section class="film-section section-pad">
+      <p class="eyebrow reveal">ROLL THE FILM</p>
+      <h2 class="section-title reveal">A few seconds.<br><em>A thousand feelings.</em></h2>
+      <p class="section-copy reveal">Sometimes a video keeps the things a picture can't — the voices, the laughter, the way a moment actually felt.</p>
+      <div class="video-frame reveal">
+        <video id="memory-video" controls playsinline preload="metadata" poster="media/photo-01.jpg">
+          <source src="media/memory-01.mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+        <div class="video-placeholder" id="video-placeholder">
+          <span>▶</span>
+          <p>YOUR LITTLE MOVIE GOES HERE</p>
+          <small>Add a video named media/memory-01.mp4</small>
+        </div>
+      </div>
+      <p class="video-caption handwritten">press play. come back to this moment with me.</p>
+    </section>
+
+    <section id="timeline" class="timeline-section section-pad">
+      <p class="eyebrow reveal">CHAPTERS OF US</p>
+      <h2 class="section-title reveal">Look how far<br><em>our story has come.</em></h2>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span class="timeline-dot">01</span>
+          <div><p class="memory-date">THE BEGINNING</p><h3>Before we became us.</h3><p>Two people, a conversation, and no idea how much the story would come to mean.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-dot">02</span>
+          <div><p class="memory-date">GETTING CLOSER</p><h3>Learning your little ways.</h3><p>The conversations got longer. The laughs became familiar. Slowly, you became part of my everyday life.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-dot">03</span>
+          <div><p class="memory-date">NOVEMBER 1, 2025</p><h3>The day we became official.</h3><p>One date on a calendar. One decision. A whole new chapter that I get to call ours.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-dot">04</span>
+          <div><p class="memory-date">NOVEMBER 1, 2026</p><h3>One year of choosing us.</h3><p>Here we are. A year of learning, growing, laughing, and finding new reasons to appreciate each other.</p></div>
+        </article>
+      </div>
+      <p class="timeline-note handwritten">and this is only chapter one.</p>
+    </section>
+
+    <section id="letters" class="letters-section section-pad">
+      <p class="eyebrow reveal">SOME THINGS DESERVE MORE THAN A TEXT</p>
+      <h2 class="section-title reveal">Letters for <em>you.</em></h2>
+      <p class="section-copy reveal">A few things I wanted you to hear, even if I couldn't find the perfect moment to say them.</p>
+
+      <div class="letter-list">
+        <button class="letter-card reveal" data-letter="letter1"><span>01</span><span><small>FOR MY FAVOURITE PERSON</small><strong>To the girl who became my person</strong></span><span>↗</span></button>
+        <button class="letter-card reveal" data-letter="letter2"><span>02</span><span><small>THE LITTLE THINGS</small><strong>Things I hope you always know</strong></span><span>↗</span></button>
+        <button class="letter-card reveal" data-letter="letter3"><span>03</span><span><small>ONE YEAR LATER</small><strong>What this year has meant to me</strong></span><span>↗</span></button>
+      </div>
+      <p class="letter-edit-note">These are starter letters. We'll personalise them with your real memories and your own words.</p>
+    </section>
+
+    <section class="promise-section section-pad">
+      <div class="promise-inner reveal">
+        <span class="big-heart">♡</span>
+        <p class="eyebrow">IF THERE'S ONE THING I WANT YOU TO KNOW</p>
+        <h2>I don't need a perfect story.<br>I just want an <em>honest one with you.</em></h2>
+        <p>One where we keep learning each other, keep laughing at the little things, talk through the difficult days, and keep making room for each other to grow.</p>
+      </div>
+    </section>
+
+    <section class="surprise-section section-pad">
+      <p class="eyebrow reveal">ONE LAST LITTLE THING</p>
+      <h2 class="section-title reveal">I saved something<br><em>just for you.</em></h2>
+      <button id="surprise-button" class="button button-dark reveal">Open your surprise ♡</button>
+      <div id="surprise-content" class="surprise-content" hidden>
+        <span class="big-heart">♡</span>
+        <p class="eyebrow">MY ANNIVERSARY WISH</p>
+        <h3>Happy one year, Precious.</h3>
+        <p>I hope this is only the first of many anniversaries we get to celebrate. Thank you for the memories we've made so far. I can't wait to discover the ones we haven't made yet.</p>
+        <p class="handwritten">All my love, Daniel.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer-heart">♡</p>
+      <h2>Daniel <em>&</em> Precious</h2>
+      <p>Our first chapter. Not our last.</p>
+      <small>MADE WITH LOVE · NOVEMBER 1, 2026</small>
+      <a href="#home" class="back-top">BACK TO THE BEGINNING ↑</a>
+    </footer>
+  </main>
+
+  <!-- LETTER READER -->
+  <dialog id="letter-dialog" class="letter-dialog">
+    <button id="close-letter" class="close-letter" aria-label="Close letter">×</button>
+    <p class="eyebrow">A LETTER FOR PRECIOUS</p>
+    <h2 id="letter-title"></h2>
+    <div id="letter-body" class="letter-body"></div>
+    <p class="handwritten">With love, Daniel ♡</p>
+  </dialog>
+
+  <audio id="background-music" src="media/our-song.mp3" loop preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
