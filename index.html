@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>One Year of Us — Daniel & Precious</title>
+
+    <meta
+        name="description"
+        content="One year. One story. A collection of memories belonging to Daniel and Precious."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         LOADING / SECRET SCREEN
+    ========================== -->
+
+    <div id="gate" class="gate">
+
+        <div class="gate-glow"></div>
+
+        <div class="gate-content">
+
+            <p class="eyebrow">01 · 11 · 2025</p>
+
+            <h1>
+                One Year<br>
+                <span>Of Us.</span>
+            </h1>
+
+            <p class="gate-subtitle">
+                Some memories deserve their own place.
+            </p>
+
+            <div class="secret-box">
+
+                <input
+                    type="password"
+                    id="secretInput"
+                    placeholder="Enter our secret..."
+                    autocomplete="off"
+                >
+
+                <button id="enterButton">
+                    Enter
+                    <span>→</span>
+                </button>
+
+            </div>
+
+            <p id="gateError" class="gate-error">
+                That's not our little secret.
+            </p>
+
+            <p class="gate-hint">
+                For Daniel & Precious only.
+            </p>
+
+        </div>
+
+        <div class="gate-bottom">
+            2025 — 2026
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
+
+    <main id="website" class="website hidden">
+
+
+        <!-- MUSIC -->
+
+        <button id="musicButton" class="music-button">
+            <span class="music-icon">♪</span>
+            <span>Our song</span>
+        </button>
+
+        <audio id="backgroundMusic" loop>
+            <source src="media/our-song.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="hero-noise"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-kicker">
+                    NOVEMBER 01, 2025 — NOVEMBER 01, 2026
+                </p>
+
+                <h1>
+                    One Year
+                    <span>Of Us.</span>
+                </h1>
+
+                <p class="hero-description">
+                    365 days of conversations, laughter,
+                    memories, little moments and everything
+                    in between.
+                </p>
+
+                <div class="hero-names">
+                    Daniel <span>×</span> Precious
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll to remember</span>
+                <div class="scroll-line"></div>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INTRO
+        ========================== -->
+
+        <section class="intro section">
+
+            <div class="section-number">01</div>
+
+            <div class="intro-content">
+
+                <p class="eyebrow">A little something for you</p>
+
+                <h2>
+                    We didn't just make
+                    <em>memories.</em>
+                </h2>
+
+                <p>
+                    We created a whole collection of little moments
+                    that somehow became one beautiful story.
+                </p>
+
+                <p>
+                    So I put some of them here.
+                    Not because these are all of our memories,
+                    but because I never want to forget how they felt.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             VIDEO MEMORIES
+        ========================== -->
+
+        <section class="memories section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">02 — The memories</p>
+
+                    <h2>
+                        A year
+                        <em>in motion.</em>
+                    </h2>
+                </div>
+
+                <p class="heading-note">
+                    Seven little windows into our year.
+                </p>
+
+            </div>
+
+
+            <div class="video-grid">
+
+
+                <!-- VIDEO 01 -->
+
+                <article class="video-card large reveal">
+
+                    <div class="video-wrapper">
+
+                        <video
+                            src="media/video-01.mp4"
+                            preload="metadata"
+                            playsinline
+                        ></video>
+
+                        <button class="video-play">
+                            ▶
+                        </button>
+
+                        <div class="video-overlay"></div>
+
+                    </div>
+
+                    <div class="video-info">
+                        <span>Memory 01</span>
+
+                        <h3>
+                            The beginning of something beautiful.
+                        </h3>
+
+                        <p>
+                            The moments that started it all.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <!-- VIDEO 02 -->
+
+                <article class="video-card reveal">
+
+                    <div class="video-wrapper">
+
+                        <video
+                            src="media/video-02.mp4"
+                            preload="metadata"
+                            playsinline
+                        ></video>
+
+                        <button class="video-play">
+                            ▶
+                        </button>
+
+                        <div class="video-overlay"></div>
+
+                    </div>
+
+                    <div class="video-info">
+                        <span>Memory 02</span>
+
+                        <h3>
+                            One of my favourite little moments.
+                        </h3>
+                    </div>
+
+                </article>
+
+
+                <!-- VIDEO 03 -->
+
+                <article class="video-card reveal">
+
+                    <div class="video-wrapper">
+
+                        <video
+                            src="media/video-03.mp4"
+                            preload="metadata"
+                            playsinline
+                        ></video>
+
+                        <button class="video-play">
+                            ▶
+                        </button>
+
+                        <div class="video-overlay"></div>
+
+                    </div>
+
+                    <div class="video-info">
+                        <span>Memory 03</span>
+
+                        <h3>
+                            Just us being us.
+                        </h3>
+                    </div>
+
+                </article>
+
+
+                <!-- VIDEO 04 -->
+
+                <article class="video-card wide reveal">
+
+                    <div class="video-wrapper">
+
+                        <video
+                            src="media/video-04.mp4"
+                            preload="metadata"
+                            playsinline
+                        ></video>
+
+                        <button class="video-play">
+                            ▶
+                        </button>
+
+                        <div class="video-overlay"></div>
+
+                    </div>
+
+                    <div class="video-info">
+                        <span>Memory 04</span>
+
+                        <h3>
+                            A moment worth keeping forever.
+                        </h3>
+
+                        <p>
+                            Some things don't need an explanation.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <!-- VIDEO 05 -->
+
+                <article class="video-card reveal">
+
+                    <div class="video-wrapper">
+
+                        <video
+                            src="media/video-05.mp4"
+                            preload="metadata"
+                            playsinline
+                        ></video>
+
+                        <button class="video-play">
+                            ▶
+                        </button>
+
+                        <div class="video-overlay"></div>
+
+                    </div>
+
+                    <div class="video-info">
+                        <span>Memory 05</span>
+
+                        <h3>
+                            The kind of moment I replay.
+                        </h3>
+                    </div>
+
+                </article>
+
+
+                <!-- VIDEO 06 -->
+
+                <article class="video-card reveal">
+
+                    <div class="video-wrapper">
+
+                        <video
+                            src="media/video-06.mp4"
+                            preload="metadata"
+                            playsinline
+                        ></video>
+
+                        <button class="video-play">
+                            ▶
+                        </button>
+
+                        <div class="video-overlay"></div>
+
+                    </div>
+
+                    <div class="video-info">
+                        <span>Memory 06</span>
+
+                        <h3>
+                            Another page in our story.
+                        </h3>
+                    </div>
+
+                </article>
+
+
+                <!-- VIDEO 07 -->
+
+                <article class="video-card final-video reveal">
+
+                    <div class="video-wrapper">
+
+                        <video
+                            src="media/video-07.mp4"
+                            preload="metadata"
+                            playsinline
+                        ></video>
+
+                        <button class="video-play">
+                            ▶
+                        </button>
+
+                        <div class="video-overlay"></div>
+
+                    </div>
+
+                    <div class="video-info">
+                        <span>Memory 07</span>
+
+                        <h3>
+                            And somehow, a whole year passed.
+                        </h3>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PHOTO SECTION
+        ========================== -->
+
+        <section class="photos section">
+
+            <div class="photo-intro">
+
+                <p class="eyebrow">03 — Still moments</p>
+
+                <h2>
+                    Two frames.
+                    <br>
+                    <em>A thousand feelings.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="photo-stage">
+
+                <figure class="photo photo-one reveal">
+
+                    <div class="photo-frame">
+                        <img
+                            src="media/photo-01.jpg"
+                            alt="Daniel and Precious"
+                        >
+                    </div>
+
+                    <figcaption>
+                        <span>01</span>
+                        A moment frozen in time.
+                    </figcaption>
+
+                </figure>
+
+
+                <figure class="photo photo-two reveal">
+
+                    <div class="photo-frame">
+                        <img
+                            src="media/photo-02.jpg"
+                            alt="Daniel and Precious"
+                        >
+                    </div>
+
+                    <figcaption>
+                        <span>02</span>
+                        One of the memories I keep close.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TIMELINE
+        ========================== -->
+
+        <section class="timeline section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">04 — Our story</p>
+
+                    <h2>
+                        How we got
+                        <em>here.</em>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-list">
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-date">
+                        01.11.25
+                    </div>
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            The beginning.
+                        </h3>
+
+                        <p>
+                            Somewhere between conversations,
+                            jokes and getting to know each other,
+                            something changed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-date">
+                        THEN
+                    </div>
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            We kept choosing each other.
+                        </h3>
+
+                        <p>
+                            Through the good days, the difficult
+                            conversations and all the random moments
+                            in between.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-date">
+                        NOW
+                    </div>
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            One whole year.
+                        </h3>
+
+                        <p>
+                            And somehow, this is only chapter one.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LETTERS
+        ========================== -->
+
+        <section class="letters section">
+
+            <div class="letters-heading">
+
+                <p class="eyebrow">05 — Things I wanted to say</p>
+
+                <h2>
+                    Three letters.
+                    <br>
+                    <em>For you.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="letter-grid">
+
+                <button
+                    class="letter-card"
+                    data-letter="one"
+                >
+
+                    <span>01</span>
+
+                    <h3>
+                        For the girl I chose.
+                    </h3>
+
+                    <small>
+                        Open letter →
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="letter-card"
+                    data-letter="two"
+                >
+
+                    <span>02</span>
+
+                    <h3>
+                        For everything we've become.
+                    </h3>
+
+                    <small>
+                        Open letter →
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="letter-card"
+                    data-letter="three"
+                >
+
+                    <span>03</span>
+
+                    <h3>
+                        For the year ahead.
+                    </h3>
+
+                    <small>
+                        Open letter →
+                    </small>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROMISE
+        ========================== -->
+
+        <section class="promise section">
+
+            <div class="promise-inner">
+
+                <p class="eyebrow">
+                    06 — One little promise
+                </p>
+
+                <h2>
+                    If I had to choose
+                    <br>
+                    <em>again...</em>
+                </h2>
+
+                <p class="promise-text">
+                    I'd still choose you.
+                </p>
+
+                <div class="promise-line"></div>
+
+                <p class="signature">
+                    — Daniel
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SECRET SURPRISE
+        ========================== -->
+
+        <section class="surprise section">
+
+            <div class="surprise-box">
+
+                <p class="eyebrow">
+                    07 — There's more
+                </p>
+
+                <h2>
+                    One last thing...
+                </h2>
+
+                <p>
+                    You made it this far.
+                    I think you deserve one more little surprise.
+                </p>
+
+                <button id="surpriseButton" class="surprise-button">
+                    Open it
+                    <span>✦</span>
+                </button>
+
+                <div id="surpriseMessage" class="surprise-message">
+
+                    <div class="surprise-star">✦</div>
+
+                    <h3>
+                        Happy One Year,
+                        Precious.
+                    </h3>
+
+                    <p>
+                        Thank you for becoming one of the
+                        most beautiful parts of my year.
+                    </p>
+
+                    <p>
+                        Here's to everything we've already lived,
+                        and everything still waiting for us.
+                    </p>
+
+                    <strong>
+                        I love our story.
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer>
+
+            <div class="footer-symbol">
+                ♡
+            </div>
+
+            <h2>
+                Daniel <span>×</span> Precious
+            </h2>
+
+            <p>
+                One year down.
+                So many memories to go.
+            </p>
+
+            <small>
+                01 · 11 · 2025 — 01 · 11 · 2026
+            </small>
+
+        </footer>
+
+    </main>
+
+
+    <!-- =========================
+         LETTER MODAL
+    ========================== -->
+
+    <div id="letterModal" class="modal">
+
+        <div class="modal-inner">
+
+            <button id="closeModal" class="close-modal">
+                ×
+            </button>
+
+            <p class="eyebrow">
+                A letter from Daniel
+            </p>
+
+            <h2 id="letterTitle">
+                For you.
+            </h2>
+
+            <div id="letterContent" class="letter-content"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         VIDEO MODAL
+    ========================== -->
+
+    <div id="videoModal" class="video-modal">
+
+        <button id="closeVideo" class="close-video">
+            ×
+        </button>
+
+        <video
+            id="modalVideo"
+            controls
+            playsinline
+        ></video>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
